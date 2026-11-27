@@ -1,0 +1,21 @@
+[project]
+name = "trip-planner"
+version = "0.1.0"
+description = "Trip planner: Software Management & Development group project, Team 5"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115",
+    "sqlalchemy>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
